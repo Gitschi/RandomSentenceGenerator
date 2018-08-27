@@ -38,7 +38,7 @@ function BuildSentenceBlock(){
       newSentence += cutWords[GetRandom(cutWords.length)];
       newSentence += " ";
     }
-    while(newSentence.length <= maxLength); // stops when sentence is longer than maxLength
+    while(newSentence.length < maxLength); // stops when sentence is longer than maxLength
 
     // Slices off last space
     newSentence = newSentence.slice(0, -1)
